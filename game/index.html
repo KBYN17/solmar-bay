@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Solmar Bay — Open-World Crime Game</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0a1018;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+  }
+  #wrap { text-align: center; }
+  canvas {
+    display: block;
+    width: 1280px;
+    height: 720px;
+    max-width: 96vw;
+    max-height: 92vh;
+    background: #2f6b3a;
+    border: 2px solid #f5c542;
+    border-radius: 8px;
+    image-rendering: auto;
+  }
+  #help {
+    color: #9fb4c8;
+    font-size: 13px;
+    margin-top: 8px;
+  }
+  #help b { color: #ffd23d; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="help"><b>WASD</b> move / drive &nbsp;·&nbsp; <b>E</b> interact / enter car &nbsp;·&nbsp; <b>F</b> steal car &nbsp;·&nbsp; <b>Click</b> shoot &nbsp;·&nbsp; <b>B</b> stash $50 &nbsp;·&nbsp; <b>S</b> save &nbsp;·&nbsp; <b>L</b> load &nbsp;·&nbsp; <b>P</b> pause &nbsp;·&nbsp; <b>M</b> mute</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
